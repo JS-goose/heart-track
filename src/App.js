@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import Nav from '../src/components/layout/navigation/Nav';
 
-function App() {
-  return (
-    <div className="App">
-      Heart Track!
-      <Nav />
-    </div>
-  );
+class App extends Component {
+  state = {
+    HR: 0,
+  }
+  render() {
+    return (
+      <div className="App">
+        Heart Track!
+        <Nav />
+      </div>
+    );
+  }
 }
 
 export default App;
