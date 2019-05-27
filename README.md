@@ -6,13 +6,13 @@ This project is intended to be used to give daily reports of healt information b
 * &#x2705; Establish component tree structure 
 * &#x2705; Create component/page/layout files 
         * Layout 
-            * Navigation
-                * Pages
-                    * &#x2705; About 
-                    * &#x2705; Charts 
-                    * &#x2705; Contributors
-                    * &#x2705; Home 
-                    * &#x2705; OpenSource
+            ** Navigation
+                ** Pages
+                    ** &#x2705; About 
+                    ** &#x2705; Charts 
+                    ** &#x2705; Contributors
+                    ** &#x2705; Home 
+                    ** &#x2705; OpenSource
 
 
 
