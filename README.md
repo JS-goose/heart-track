@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Heart Track
+This project is intended to be used to give daily reports of healt information based on manual user input.  Currently, the plans for this app are as follows:
+
+* Initial project structure established &#x2705;
+
+This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
