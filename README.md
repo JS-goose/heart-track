@@ -1,7 +1,21 @@
 # Heart Track
-This project is intended to be used to give daily reports of healt information based on manual user input.  Currently, the plans for this app are as follows:
+This project is intended to be used to give daily reports of healt information based on manual user input.  Currently, this application is in the building stage.  Follow the progress below:
 
-* Initial project structure established &#x2705;
+* Establish initial project structure &#x2705;
+* Establish file structure &#x2705;
+* Establish component tree structure &#x2705;
+* Create component/page/layout files &#x2705;
+        * Layout 
+            * Navigation
+                * Pages
+                    * About &#x2705;
+                    * Charts &#x2705;
+                    * Contributors &#x2705;
+                    * Home &#x2705;
+                    * OpenSource &#x2705;
+
+
+
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
