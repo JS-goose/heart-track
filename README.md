@@ -1,4 +1,4 @@
-# ❤ Heart Track ❤
+# ❤ HearTrack ❤
 This project is intended to be used to give daily reports of healt information based on manual user input.  Currently, this application is in the building stage.  Follow the progress below:
 
 * &#x2705; Establish initial project structure 
