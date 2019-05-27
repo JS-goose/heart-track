@@ -1,9 +1,10 @@
 #nav-container {
-    /* height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    margin: 0;
+    background-color: red;
 }
 #nav-links-list {
     list-style: none;
