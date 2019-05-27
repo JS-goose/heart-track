@@ -10,6 +10,8 @@ export default function Nav() {
                 <li>Open Source</li>
                 <li>Contributors</li>
             </ul>
+
+            <React.Fragment>Log In</React.Fragment>
         </nav>
     )
 }
