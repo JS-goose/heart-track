@@ -1,5 +1,8 @@
 #nav-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 #nav-links-list {
     list-style: none;
@@ -16,4 +19,8 @@
 
 #nav-links-list li:last-of-type {
     border-right: none;
+}
+
+#login-container {
+    border: 1px solid black;
 }
