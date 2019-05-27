@@ -4,15 +4,22 @@ This project is intended to be used to give daily reports of healt information b
 * &#x2705; Establish initial project structure 
 * &#x2705; Establish file structure 
 * &#x2705; Establish component tree structure 
-* &#x2705; Create component/page/layout files 
+* &#x2705; Create initial (empty) component/page/layout files 
     - Layout 
         - Navigation
-            - Pages
-                - &#x2705; About 
-                - &#x2705; Charts 
-                - &#x2705; Contributors
-                - &#x2705; Home 
-                - &#x2705; OpenSource
+            - &#x2705; Nav component
+        - Pages
+            - &#x2705; About 
+            - &#x2705; Charts 
+            - &#x2705; Contributors
+            - &#x2705; Home 
+            - &#x2705; OpenSource
+        - User Info
+            - &#x2705; Age component
+            - &#x2705; Bloog Pressure component
+            - &#x2705; Heart Rate component
+            - &#x2705; Height component
+            - &#x2705; Weight component
 
 
 
