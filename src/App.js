@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        Heart Track!
+        <h1>❤HearTrack❤</h1>
         <Nav />
       </div>
     );
