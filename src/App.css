@@ -3,6 +3,11 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
+body {
+  background: url('./assets/alexandru-acea-1076770-unsplash.jpg') fixed center;
+  color: white;
+}
 .App {
   text-align: center;
 }
