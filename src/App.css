@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   padding: 0;
   margin: 0;
@@ -7,7 +8,8 @@ html, body {
 }
 
 body {
-  background: url('./assets/imgs/Heart_Beat.jpg') fixed no-repeat center/cover;
+  /* Background img used with permission from https://all-free-download.com/free-vector/download/heart-beat_311524.html */
+  background: url("./assets/imgs/Heart_Beat.jpg") fixed no-repeat center/cover;
   color: rgb(27, 27, 27);
 }
 .App {
