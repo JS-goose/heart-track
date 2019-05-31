@@ -2,11 +2,13 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  background: url('./assets/alexandru-acea-1076770-unsplash.jpg') fixed center;
-  color: white;
+  background: url('./assets/imgs/Heart_Beat.jpg') fixed no-repeat center/cover;
+  /* color: white; */
 }
 .App {
   text-align: center;
