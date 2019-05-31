@@ -8,7 +8,7 @@ html, body {
 
 body {
   background: url('./assets/imgs/Heart_Beat.jpg') fixed no-repeat center/cover;
-  /* color: white; */
+  color: rgb(27, 27, 27);
 }
 .App {
   text-align: center;
