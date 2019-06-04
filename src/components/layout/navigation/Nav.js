@@ -1,26 +1,25 @@
 import React from "react";
 import styles from "./Nav.module.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import About from '../pages/About';
 
 export default function Nav() {
   return (
     <nav id={styles["nav-container"]}>
       <ul id={styles["nav-links-list"]}>
-        <a href="Home.js">
-          <li>Home</li>
-        </a>
-        <a href="About.js">
-          <li>About</li>
-        </a>
-        <a href="Charts.js">
-          <li>Charts</li>
-        </a>
-        <a href="OpenSource.js">
-          <li>Open Source</li>
-        </a>
-        <a href="Contributors.js">
-          <li>Contributors</li>
-        </a>
+      <li><Link to='/'>
+          Home
+        </Link></li>
+        <li><Link to='/about'>
+          About
+        </Link></li>
+        <li><Link to='/charts'>
+          Charts
+        </Link></li><li><Link to='/opensource'>
+          Open Source
+        </Link></li><li><Link to='/contributors'>
+          Contributors
+        </Link></li>
       </ul>
 
       <h1>❤HearTrack❤</h1>
