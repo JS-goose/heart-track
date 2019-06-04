@@ -18,8 +18,8 @@ class App extends Component {
       <Router>
       <div className="App">
         <Nav />
+        <Route exact path="/about" component={About} />
         <CenterModal />
-        <Route path="/about" component={About} />
       </div>
       </Router>
     );
