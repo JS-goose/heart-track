@@ -1,7 +1,13 @@
 .centerModal {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 5px solid purple;
     font-size: 1.1rem;
     color: brown;
-    width: 60%;
+    width: 50%;
+    height: 40%;
+    align-self: center;
+    /* Fix this with flex box instead of margin */
+    margin-top: 10%;
 }
