@@ -1,3 +1,7 @@
 .centerModal {
-    border: 1px solid black;
+    text-align: center;
+    border: 5px solid purple;
+    font-size: 1.1rem;
+    color: brown;
+    width: 60%;
 }
