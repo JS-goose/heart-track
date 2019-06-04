@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Nav from '../src/components/layout/navigation/Nav';
+import CenterModal from '../src/components/layout/CenterModal/CenterModal'
 
 class App extends Component {
   state = {
@@ -15,6 +16,7 @@ class App extends Component {
       <div className="App">
         <h1>❤HearTrack❤</h1>
         <Nav />
+        <CenterModal />
       </div>
     );
   }
