@@ -1,12 +1,11 @@
 import React from 'react';
-import CenterModal from '../CenterModal/CenterModal'
+import CenterModal from '../CenterModal/CenterModal';
 
 const Home = () => {
     return(
-        <div>
-            <h1>This is the Home page.</h1>
+        <React.Fragment>
             <CenterModal />
-        </div>
+        </React.Fragment>
     )
 }
 
