@@ -1,5 +1,6 @@
 import React from "react";
-import placeholder from '../../../assets/imgs/chart-placeholder.jpg'
+import placeholder from '../../../assets/imgs/chart-placeholder.jpg';
+import styles from './styles/Charts.module.css';
 
 const Charts = () => {
   return (
