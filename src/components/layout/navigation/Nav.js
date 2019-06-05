@@ -31,10 +31,10 @@ export default function Nav() {
           <form action="">
             <p>Log In</p>
             <label htmlFor="{styles['username-input]}" />
-            <i class="fas fa-user-shield" />{" "}
+            <i className="fas fa-user-shield" />{" "}
             <input id={styles["username-input"]} type="text" placeholder="username" />
             <label htmlFor="{styles['password-input']}" />
-            <i class="fas fa-lock" />{" "}
+            <i className="fas fa-lock" />{" "}
             <input id={styles["password-input"]} type="password" placeholder="password" />
           </form>
         </div>
