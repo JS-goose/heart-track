@@ -17,8 +17,8 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-        <Nav />
         <Route exact path="/about" component={About} />
+        <Nav />
         <CenterModal />
       </div>
       </Router>
