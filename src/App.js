@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import Nav from '../src/components/layout/navigation/Nav';
 import About from '../src/components/layout/pages/About'
-import CenterModal from '../src/components/layout/CenterModal/CenterModal'
-
+import Home from './components/layout/pages/Home'
 class App extends Component {
   state = {
     HR: 0,
@@ -17,9 +16,9 @@ class App extends Component {
     return (
       <Router>
       <div className="App">
-        <Route exact path="/about" component={About} />
         <Nav />
-        <CenterModal />
+        <Route exact path='/' component={Home} />
+        <Route path="/about" component={About} />
       </div>
       </Router>
     );
