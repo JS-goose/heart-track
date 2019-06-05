@@ -31,7 +31,7 @@ export default function Nav() {
             <label htmlFor="{styles['username-input]}" />
             <input id={styles["username-input"]} type="text" placeholder="username" />
             <label htmlFor="{styles['password-input']}" />
-            <input id={styles["password-input"]} type="text" placeholder="password" />
+            <input id={styles["password-input"]} type="password" placeholder="password" />
           </form>
         </div>
       </React.Fragment>
