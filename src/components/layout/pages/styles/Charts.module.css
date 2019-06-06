@@ -3,3 +3,13 @@ img {
     border-radius: 5px;
     box-shadow: 1px 1px 8px lightslategrey;
 }
+
+#user-inputs {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    height: 200px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+}

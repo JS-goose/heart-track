@@ -11,7 +11,7 @@ const Charts = () => {
         them charted out on their chosen time scale.
       </p>
       <img src={placeholder} alt="a chart graph showing red and green values" />
-      <form>
+      <form id={styles['user-inputs']}>
       <label htmlFor={styles["heartRate-input"]} />
       <input type="number" placeholder='heart rate'/>
 
