@@ -11,20 +11,6 @@ const Charts = () => {
         them charted out on their chosen time scale.
       </p>
 
-      <figure>
-        <img src={placeholder} alt="a chart graph showing red and green values" />
-        <figcaption>
-          Photo by{" "}
-          <a href="https://unsplash.com/@m_b_m" target="_blank" rel="noreferrer noopener">
-            M. B. M.
-          </a>{" "}
-          on{" "}
-          <a href="https://unsplash.com" target="_blank" rel="noreferrer noopener">
-            Unsplash
-          </a>
-        </figcaption>
-      </figure>
-
       <form id={styles["user-inputs"]}>
         <label htmlFor={styles["heartRate-input"]} />
         <input type="number" placeholder="heart rate" />
@@ -44,6 +30,20 @@ const Charts = () => {
         <label htmlFor={styles["age-input"]} />
         <input type="number" placeholder="age" />
       </form>
+
+      <figure>
+        <img src={placeholder} alt="a chart graph showing red and green values" />
+        <figcaption>
+          Photo by{" "}
+          <a href="https://unsplash.com/@m_b_m" target="_blank" rel="noreferrer noopener">
+            M. B. M.
+          </a>{" "}
+          on{" "}
+          <a href="https://unsplash.com" target="_blank" rel="noreferrer noopener">
+            Unsplash
+          </a>
+        </figcaption>
+      </figure>
     </div>
   );
 };
