@@ -4,7 +4,7 @@ import styles from "./styles/Charts.module.css";
 
 const Charts = () => {
   return (
-    <div>
+    <article id="chart-container">
       <h1>Charts</h1>
       <p>
         Here users will eventually be able to manually input their vital statistic numbers and see
@@ -44,7 +44,7 @@ const Charts = () => {
           </a>
         </figcaption>
       </figure>
-    </div>
+    </article>
   );
 };
 
