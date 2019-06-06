@@ -7,9 +7,12 @@ img {
 #user-inputs {
     display: flex;
     flex-direction: column;
-    border: 1px solid gray;
+    border: 3px solid var(--gray);
+    background-color: var(--white);
+    border-radius: 2px;
     height: 200px;
     width: 350px;
     align-items: center;
     justify-content: center;
+    margin: 10px 0;
 }
