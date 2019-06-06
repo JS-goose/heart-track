@@ -1,3 +1,9 @@
+:root {
+  --gray: rgb(102, 102, 102);
+  --white: rgb(235, 235, 235);
+  --red: rgb(207, 49, 49);
+}
+
 html,
 body {
   height: 100%;

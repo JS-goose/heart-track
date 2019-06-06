@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 5px solid black;
+    border: 5px solid var(--gray);
     font-size: 1.1rem;
-    color: brown;
+    color: var(--red);
     width: 50%;
     height: 40%;
     align-self: center;
