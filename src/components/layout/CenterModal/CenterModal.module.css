@@ -3,7 +3,10 @@
     flex-direction: column;
     justify-content: center;
     border: 5px solid var(--gray);
-    font-size: 1.1rem;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px gray;
+    background-color: var(--white);
+    font-size: 1.2rem;
     color: var(--red);
     width: 50%;
     height: 40%;
