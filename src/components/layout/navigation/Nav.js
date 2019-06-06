@@ -24,7 +24,7 @@ export default function Nav() {
         </li>
       </ul>
 
-      <h1>❤HearTrack❤</h1>
+      <h1>Heart<i className="fas fa-heartbeat"></i>Track</h1>
 
       <React.Fragment>
         <div id={styles["login-container"]}>
