@@ -11,14 +11,17 @@ img {
 }
 
 #user-inputs {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     border: 3px solid var(--gray);
     background-color: var(--white);
     border-radius: 2px;
-    height: 200px;
-    width: 350px;
+    height: 60%;
+    width: 40%;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
+    padding: 20px 0;
 }
