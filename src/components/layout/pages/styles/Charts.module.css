@@ -11,8 +11,6 @@ img {
 }
 
 #user-inputs {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: repeat(2,auto);
     border: 3px solid var(--gray);
@@ -21,7 +19,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    padding: 20px 0;
+    padding: 20px 20px 20px 0;
     grid-gap: 10px;
 }
 
@@ -31,4 +29,5 @@ img {
 
 #user-inputs li {
     padding: 10px;
+    font-weight: 600;
 }
