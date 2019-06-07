@@ -12,22 +12,22 @@ const Charts = () => {
       </p>
 
       <form id={styles["user-inputs"]}>
-        <label htmlFor={styles["heartRate-input"]} />
+        <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
         <input type="number" placeholder="heart rate" />
 
-        <label htmlFor={styles["bp-systolic-input"]} />
+        <label htmlFor={styles["bp-systolic-input"]}>BP - Systolic: </label>
         <input type="number" placeholder="i.e. 120" />
 
-        <label htmlFor={styles["bp-diastolic-input"]} />
+        <label htmlFor={styles["bp-diastolic-input"]}>BP - Diastolic: </label>
         <input type="number" placeholder="i.e. 80" />
 
-        <label htmlFor={styles["weight-input"]} />
+        <label htmlFor={styles["weight-input"]}>Weight: </label>
         <input type="number" placeholder="weight" />
 
-        <label htmlFor={styles["height-input"]} />
+        <label htmlFor={styles["height-input"]}>Height: </label>
         <input type="number" placeholder="height" />
 
-        <label htmlFor={styles["age-input"]} />
+        <label htmlFor={styles["age-input"]}>Age: </label>
         <input type="number" placeholder="age" />
       </form>
 
