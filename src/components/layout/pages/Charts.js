@@ -4,7 +4,7 @@ import styles from "./styles/Charts.module.css";
 
 const Charts = () => {
   return (
-    <article id={styles['chart-container']}>
+    <article id={styles["chart-container"]}>
       <h1>Charts</h1>
       <p>
         Here users will eventually be able to manually input their vital statistic numbers and see
@@ -12,23 +12,39 @@ const Charts = () => {
       </p>
 
       <form id={styles["user-inputs"]}>
-        <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
-        <input type="number" placeholder="heart rate" />
+        <article>
+          <ul>
+            <li>
+              <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
+              <input type="number" placeholder="heart rate" />
+            </li>
+            <li>
+              <label htmlFor={styles["bp-systolic-input"]}>BP - Systolic: </label>
+              <input type="number" placeholder="i.e. 120" />
+            </li>
+            <li>
+              <label htmlFor={styles["bp-diastolic-input"]}>BP - Diastolic: </label>
+              <input type="number" placeholder="i.e. 80" />
+            </li>
+          </ul>
+        </article>
 
-        <label htmlFor={styles["bp-systolic-input"]}>BP - Systolic: </label>
-        <input type="number" placeholder="i.e. 120" />
-
-        <label htmlFor={styles["bp-diastolic-input"]}>BP - Diastolic: </label>
-        <input type="number" placeholder="i.e. 80" />
-
-        <label htmlFor={styles["weight-input"]}>Weight: </label>
-        <input type="number" placeholder="weight" />
-
-        <label htmlFor={styles["height-input"]}>Height: </label>
-        <input type="number" placeholder="height" />
-
-        <label htmlFor={styles["age-input"]}>Age: </label>
-        <input type="number" placeholder="age" />
+        <article>
+          <ul>
+            <li>
+              <label htmlFor={styles["weight-input"]}>Weight: </label>
+              <input type="number" placeholder="weight" />
+            </li>
+            <li>
+              <label htmlFor={styles["height-input"]}>Height: </label>
+              <input type="number" placeholder="height" />
+            </li>
+            <li>
+              <label htmlFor={styles["age-input"]}>Age: </label>
+              <input type="number" placeholder="age" />
+            </li>
+          </ul>
+        </article>
       </form>
 
       <figure>
