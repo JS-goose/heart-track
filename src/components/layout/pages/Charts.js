@@ -11,6 +11,10 @@ class Charts extends Component {
     weight: 0,
   };
 
+  handleUserInput = (event) => {
+    console.log(event.target.value)
+  }
+
   render() {
     return (
       <article id={styles["chart-container"]}>
@@ -25,7 +29,7 @@ class Charts extends Component {
             <ul>
               <li>
                 <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
-                <input type="number" placeholder="heart rate" />
+                <input type="number" placeholder="heart rate" onChange={this.handleUserInput}/>
               </li>
               <li>
                 <label htmlFor={styles["bp-systolic-input"]}>BP - Systolic: </label>
