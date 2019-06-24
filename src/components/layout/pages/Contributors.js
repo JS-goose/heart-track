@@ -3,7 +3,7 @@ import styles from './styles/Contributors.module.css';
 
 const Contributors = () => {
   return (
-    <div>
+    <article className={styles['contributors-container']}>
       <h1>Project Contributors</h1>
       <p>
         Here you will find a list of everyone that has helped in some form or fashion with the
@@ -18,7 +18,7 @@ const Contributors = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </article>
   );
 };
 
