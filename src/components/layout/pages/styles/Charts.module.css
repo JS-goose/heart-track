@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    /* Find out what's causing the scroll and fix it */
+    overflow-x: hidden;
 }
 
 #chart-container img {
