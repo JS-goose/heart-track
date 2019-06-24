@@ -1,8 +1,9 @@
 import React from "react";
+import styles from './styles/About.module.css';
 
 const About = () => {
   return (
-    <div>
+    <article className={styles['about-container']}>
       <h1>About HearTrack</h1>
       <p>
         This is an open source project created to help you track and share important vital
@@ -18,12 +19,12 @@ const About = () => {
         doctor as well as have them automatically transferred to an spreadsheet format if you
         choose. Currently the project is still in the alpha phase but if you wish to contribute we
         welcome any and all help. Check out the issues section under the{" "}
-        <a href="https://github.com/JS-goose/heart-track" target="blank">
+        <a href="https://github.com/JS-goose/heart-track" target="_blank" rel="noopener noreferrer">
           repo
         </a>
         for specific ways to contribute.
       </p>
-    </div>
+    </article>
   );
 };
 
