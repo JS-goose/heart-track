@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Nav.module.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import About from "../pages/About";
+import logo from '../../../assets/logo/HeartTrack_Logo_Middle_White.svg'
 
 export default function Nav() {
   return (
@@ -24,7 +25,8 @@ export default function Nav() {
         </li>
       </ul>
 
-      <h1>Heart<i className="fas fa-heartbeat"></i>Track</h1>
+      {/* <h1>Heart<i className="fas fa-heartbeat"></i>Track</h1> */}
+      <img src={logo} alt="the heart track logo"/>
 
       <React.Fragment>
         <div id={styles["login-container"]}>
