@@ -6,5 +6,35 @@
 }
 
 .contributors-container h1 {
-    color: red;
+    color: var(--red);
+}
+
+.contributors-container ul {
+    list-style: none;
+}
+
+.contributors-container li {
+    padding-bottom: 20px;    
+}
+
+.contributors-container li > * {
+    padding: 10px;    
+}
+
+.contributors-container a {
+    text-decoration: none;
+    font-size: 1.03rem;
+}
+
+.contributors-container a {
+    color: var(--red);
+    font-weight: 700;
+}
+
+.contributors-container a:hover {
+    color: white;
+    text-decoration: underline;
+    transition: all 0.3s;
+    background-color: var(--red);
+    padding: 6px;
 }
