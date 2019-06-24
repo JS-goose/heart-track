@@ -57,6 +57,12 @@
   border-right: none;
 }
 
+#logo {
+  max-width: 30vw;
+  min-width: 20vw;
+  
+}
+
 #login-container {
   padding: 10px;
 }

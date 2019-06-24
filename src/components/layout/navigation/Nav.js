@@ -26,7 +26,7 @@ export default function Nav() {
       </ul>
 
       {/* <h1>Heart<i className="fas fa-heartbeat"></i>Track</h1> */}
-      <img src={logo} alt="the heart track logo"/>
+      <img src={logo} alt="the heart track logo" id={styles['logo']}/>
 
       <React.Fragment>
         <div id={styles["login-container"]}>
