@@ -20,7 +20,7 @@ class App extends Component {
           <Route path="/charts" component={Charts} />
           <Route path="/contributors" component={Contributors} />
           <Route path="/opensource" component={OpenSource} />
-          <HomeWidgets />
+          <Route exact path="/" component={HomeWidgets} />
         </div>
       </Router>
     );
