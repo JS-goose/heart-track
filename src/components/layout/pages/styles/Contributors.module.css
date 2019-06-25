@@ -1,40 +1,45 @@
 .contributors-container {
-    border: 5px solid gray;
-    width: 75%;
-    height: 50%;
-    margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  height: 310px;
+  margin-top: 20vh;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px gray;
+  background-color: var(--white);
 }
 
 .contributors-container h1 {
-    color: var(--red);
+  color: var(--red);
 }
 
 .contributors-container ul {
-    list-style: none;
+  list-style: none;
 }
 
 .contributors-container li {
-    padding-bottom: 20px;    
+  padding-bottom: 20px;
 }
 
 .contributors-container li > * {
-    padding: 10px;    
+  padding: 10px;
 }
 
 .contributors-container a {
-    text-decoration: none;
-    font-size: 1.03rem;
+  text-decoration: none;
+  font-size: 1.03rem;
 }
 
 .contributors-container a {
-    color: var(--red);
-    font-weight: 700;
+  color: var(--red);
+  font-weight: 700;
 }
 
 .contributors-container a:hover {
-    color: white;
-    text-decoration: underline;
-    transition: all 0.3s;
-    background-color: var(--red);
-    padding: 6px;
+  color: white;
+  text-decoration: underline;
+  transition: all 0.3s;
+  background-color: var(--red);
+  padding: 6px;
 }
