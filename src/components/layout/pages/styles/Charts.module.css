@@ -5,6 +5,7 @@
     width: 100%;
     /* Find out what's causing the scroll and fix it */
     overflow-x: hidden;
+    color: var(--white);
 }
 
 #chart-container img {
@@ -16,14 +17,15 @@
 #user-inputs {
     display: grid;
     grid-template-columns: repeat(2,auto);
-    border: 3px solid var(--gray);
     background-color: var(--white);
-    border-radius: 2px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgb(158, 158, 158);
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    padding: 20px 20px 20px 0;
+    padding: 30px 30px 30px 0;
     grid-gap: 10px;
+    color: var(--red);
 }
 
 #user-inputs ul {
@@ -33,4 +35,11 @@
 #user-inputs li {
     padding: 10px;
     font-weight: 600;
+}
+
+#user-inputs input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px rgb(182, 182, 182);
 }
