@@ -1,3 +1,7 @@
+#home-landing-container {
+    height: 100vh;
+}
+
 .centerModal {
     display: flex;
     flex-direction: column;
