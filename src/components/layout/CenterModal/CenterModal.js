@@ -5,11 +5,15 @@ const CenterModal = () => {
   return (
     <article id={styles["home-landing-container"]}>
       <div className={styles["centerModal"]}>
-        <h2>Heart Track</h2>
-        <p>Placeholder text Placeholder text</p>
-        <div>
+        <h2>Vital statistics data, charted out for you</h2>
+        <p>
+          Enter your vitals, chart them, then export to a spreadsheet <br/>or share them with your
+          healthcare provider
+        </p>
+        <button>
           Demo <i className="fas fa-arrow-alt-circle-right" />
-        </div>
+        </button>
+        <button>Get Started</button>
       </div>
     </article>
   );
