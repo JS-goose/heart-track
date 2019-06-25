@@ -53,6 +53,10 @@
   transform: scaleX(1);
 }
 
+#nav-links-list li > a:hover {
+  color: rgb(210, 210, 210);
+}
+
 #nav-links-list li:last-of-type {
   border-right: none;
 }
@@ -60,7 +64,6 @@
 #logo {
   max-width: 30vw;
   min-width: 20vw;
-  
 }
 
 #login-container {
