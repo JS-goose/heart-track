@@ -8,6 +8,7 @@
 }
 
 .centerModal {
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +17,24 @@
   background-color: var(--white);
   font-size: 1.2rem;
   color: var(--red);
-  width: 75%;
+  width: 65%;
   height: 40%;
-  align-self: center;
+  align-items: center;
   margin-top: -12%;
+}
+
+#modal-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  width: 60%;
+}
+
+.centerModal button {
+  width: 120px;
+  height: 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
 }
