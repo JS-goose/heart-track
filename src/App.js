@@ -7,6 +7,7 @@ import Home from "./components/layout/pages/Home";
 import Charts from "./components/layout/pages/Charts";
 import OpenSource from "./components/layout/pages/OpenSource";
 import Contributors from "./components/layout/pages/Contributors";
+import HomeWidgets from "./components/layout/HomeWidgets/HomeWidgets";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/charts" component={Charts} />
           <Route path="/contributors" component={Contributors} />
           <Route path="/opensource" component={OpenSource} />
+          <HomeWidgets />
         </div>
       </Router>
     );
