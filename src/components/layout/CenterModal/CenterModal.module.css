@@ -37,4 +37,20 @@
   height: 50px;
   border: 1px solid gray;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.03rem;
+}
+
+.centerModal button:first-of-type {
+  margin-right: 20px;
+}
+
+.centerModal button:first-of-type:hover {
+  background-color: var(--red);
+  color: var(--white);
+  box-shadow: 1px 1px 10px var(--red);
+}
+
+.centerModal button:last-of-type:hover {
+  background-color: rgb(143, 255, 143);
 }
