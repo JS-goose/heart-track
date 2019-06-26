@@ -67,6 +67,9 @@
 
 #login-container {
   margin: 0 20px 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+  color: rgb(182, 182, 182);
 }
 
 #username-input {
@@ -77,6 +80,6 @@
 #username-input {
   height: 30px;
   width: 150px;
-  border: none;
+  border: 1px solid gray;
   border-radius: 5px;
 }
