@@ -27,6 +27,12 @@ const Contributors = () => {
           </a>
         </li>
         <li>
+          Joe Moses /{" "}
+          <a href="https://twitter.com/JoeMoses33" target="_blank" rel="noopener noreferrer">
+            @JoeMoses33
+          </a> / <a href="https://joemoses.dev" target="_blank" rel="noopener noreferrer">joemoses.dev</a>
+        </li>
+        <li>
           Jonathan Sexton /{" "}
           <a href="https://twitter.com/jj_goose" target="_blank" rel="noopener noreferrer">
             @jj_goose
