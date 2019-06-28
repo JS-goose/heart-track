@@ -31,7 +31,6 @@ export default function Nav() {
       <React.Fragment>
         <div id={styles["login-container"]}>
           <form action="">
-            <p>Log In</p>
             <label htmlFor="{styles['username-input]}" />
             <i className="fas fa-user-shield" />{" "}
             <input id={styles["username-input"]} type="text" placeholder="username" />
