@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./App.css";
-import Nav from "../src/components/layout/Navigation/Nav";
-import About from "../src/components/layout/pages/About";
+import Nav from "./components/layout/Navigation/Nav";
+import About from "./components/layout/pages/About";
 import Home from "./components/layout/pages/Home";
 import Charts from "./components/layout/pages/Charts";
 import OpenSource from "./components/layout/pages/OpenSource";
