@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./styles/UserInputs.module.css";
+import styles from "../../styles/UserInputs.module.css";
 
 class UserInputs extends Component {
   state = {

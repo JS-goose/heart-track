@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Nav.module.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from "../pages/About";
-import logo from '../../../assets/logo/HeartTrack_Logo_Middle_White.svg'
+import About from "../pages/About/About";
+import logo from '../../../assets/logo/HeartTrack_Logo_Middle_White.svg';
 
 export default function Nav() {
   return (

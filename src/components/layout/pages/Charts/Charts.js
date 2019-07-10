@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import UserInputs from "./UserInputs/UserInputs";
-import placeholder from "../../../assets/imgs/chart-placeholder.jpg";
-import styles from "./styles/Charts.module.css";
+import placeholder from "../../../../assets/imgs/chart-placeholder.jpg";
+import styles from "../styles/Charts.module.css";
 
 class Charts extends Component {
   render() {

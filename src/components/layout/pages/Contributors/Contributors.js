@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./styles/Contributors.module.css";
+import styles from "../styles/Contributors.module.css";
 
 const Contributors = () => {
   return (
