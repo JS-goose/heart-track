@@ -39,19 +39,31 @@
   border: 1px solid gray;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1.03rem;
+  font-size: 1.05rem;
 }
 
 .centerModal button:first-of-type {
   margin-right: 20px;
 }
 
-.centerModal button:first-of-type:hover {
+.centerModal button:hover {
   background-color: rgb(143, 255, 143);
   box-shadow: 1px 1px 10px rgba(143, 255, 143, 0.3);
+  color: var(--white);
+  text-shadow: 1px 1px 3px gray;
+  animation: btnTiming 0.3s ease-out;
 }
 
-.centerModal button:last-of-type:hover {
-  background-color: rgb(143, 255, 143);
-  box-shadow: 1px 1px 10px rgba(143, 255, 143, 0.3);
+@keyframes btnTiming {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
