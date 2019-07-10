@@ -12,7 +12,10 @@ class Charts extends Component {
   };
 
   handleUserInput = (event) => {
-    console.log(event.target.value)
+    console.log(event.target.valueAsNumber)
+    let updatedState = {...this.state};
+    updatedState = {HR: event.target.valueAsNumber};
+    this.setState({updatedState});
   }
 
   render() {
@@ -29,7 +32,7 @@ class Charts extends Component {
             <ul>
               <li>
                 <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
-                <input type="number" placeholder="heart rate" onChange={this.handleUserInput}/>
+                <input type="number" placeholder="heart rate" onInput={this.handleUserInput}/>
               </li>
               <li>
                 <label htmlFor={styles["bp-systolic-input"]}>BP - Systolic: </label>
