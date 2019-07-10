@@ -14,7 +14,7 @@ class UserInputs extends Component {
     console.log(event.target.valueAsNumber);
     let updatedState = { ...this.state };
     updatedState = { HR: event.target.valueAsNumber };
-    this.setState({ updatedState });
+    this.setState({ HR: updatedState['HR'] });
   };
 
   render() {
