@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
-const inputs = [
+const inputsOne = [
   { placeholder: "Heart Rate", type: "number" },
   { placeholder: "Systolic", type: "number" },
   { placeholder: "Diastolic", type: "number" },
+];
+
+const inputsTwo = [
   { placeholder: "Age", type: "number" },
   { placeholder: "Height", type: "number" },
   { placeholder: "Weight", type: "number" },
@@ -33,7 +36,7 @@ class UserInputs extends Component {
       <form id={styles["user-inputs"]}>
         <article>
           <ul>
-            {inputs.map((input) => {
+            {inputsOne.map((input) => {
               return (
                 <UserInput
                   key={input.placeholder}
@@ -59,6 +62,15 @@ class UserInputs extends Component {
 
         <article>
           <ul>
+            {inputsTwo.map((input) => {
+              return (
+                <UserInput
+                  key={input.placeholder}
+                  type={input.type}
+                  placeholder={input.placeholder}
+                />
+              );
+            })}
             {/* <li>
               <label htmlFor={styles["weight-input"]}>Weight: </label>
               <input type="number" placeholder="weight" />
