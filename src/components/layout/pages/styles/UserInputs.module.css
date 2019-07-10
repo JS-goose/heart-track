@@ -1,20 +1,4 @@
-#chart-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    /* Find out what's causing the scroll and fix it */
-    overflow-x: hidden;
-    color: var(--white);
-}
-
-#chart-container img {
-    width: 800px; 
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px lightslategrey;
-}
-
-/* #user-inputs {
+#user-inputs {
     display: grid;
     grid-template-columns: repeat(2,auto);
     background-color: var(--white);
@@ -42,4 +26,4 @@
     border-radius: 5px;
     border: 1px solid gray;
     box-shadow: 1px 1px 3px rgb(182, 182, 182);
-} */
+}

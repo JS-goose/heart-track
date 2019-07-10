@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import UserInputs from './UserInputs';
 import placeholder from "../../../assets/imgs/chart-placeholder.jpg";
 import styles from "./styles/Charts.module.css";
 
@@ -27,7 +28,7 @@ class Charts extends Component {
           them charted out on their chosen time scale.
         </p>
 
-        <form id={styles["user-inputs"]}>
+        {/* <form id={styles["user-inputs"]}>
           <article>
             <ul>
               <li>
@@ -61,7 +62,8 @@ class Charts extends Component {
               </li>
             </ul>
           </article>
-        </form>
+        </form> */}
+        <UserInputs />
 
         <figure>
           <img src={placeholder} alt="a chart graph showing red and green values" />
