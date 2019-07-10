@@ -1,5 +1,5 @@
 import React from 'react';
-import CenterModal from '../CenterModal/CenterModal';
+import CenterModal from '../../CenterModal/CenterModal';
 
 const Home = () => {
     return(
