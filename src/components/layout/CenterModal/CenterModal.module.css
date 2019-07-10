@@ -17,9 +17,10 @@
   font-size: 1.2rem;
   color: var(--red);
   width: 40%;
-  height: 30%;
+  /* height: 30%; */
   align-items: center;
   margin-top: -12%;
+  padding: 0 2%;
 }
 
 #modal-button-container {
