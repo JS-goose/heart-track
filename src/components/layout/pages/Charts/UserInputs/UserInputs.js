@@ -3,13 +3,13 @@ import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
 const inputs = [
-  {placeholder: 'Heart Rate', type: 'number'},
-  {placeholder: 'Systolic', type: 'number'},
-  {placeholder: 'Diastolic', type: 'number'},
-  {placeholder: 'Age', type: 'number'},
-  {placeholder: 'Height', type: 'number'},
-  {placeholder: 'Weight', type: 'number'},
-]
+  { placeholder: "Heart Rate", type: "number" },
+  { placeholder: "Systolic", type: "number" },
+  { placeholder: "Diastolic", type: "number" },
+  { placeholder: "Age", type: "number" },
+  { placeholder: "Height", type: "number" },
+  { placeholder: "Weight", type: "number" },
+];
 
 class UserInputs extends Component {
   state = {
@@ -25,7 +25,7 @@ class UserInputs extends Component {
     console.log(event.target.valueAsNumber);
     let updatedState = { ...this.state };
     updatedState = { HR: event.target.valueAsNumber };
-    this.setState({ HR: updatedState['HR'] });
+    this.setState({ HR: updatedState["HR"] });
   };
 
   render() {
@@ -34,7 +34,13 @@ class UserInputs extends Component {
         <article>
           <ul>
             {inputs.map((input) => {
-              return <UserInput key={input.placeholder} type={input.type} />
+              return (
+                <UserInput
+                  key={input.placeholder}
+                  type={input.type}
+                  placeholder={input.placeholder}
+                />
+              );
             })}
             {/* <li>
               <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
