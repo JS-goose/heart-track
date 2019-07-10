@@ -1,13 +1,24 @@
 import React, { Component } from "react";
 import styles from "../../styles/UserInputs.module.css";
+import UserInput from "./UserInput/UserInput";
+
+const inputs = [
+  {placeholder: 'Heart Rate', type: 'number'},
+  {placeholder: 'Systolic', type: 'number'},
+  {placeholder: 'Diastolic', type: 'number'},
+  {placeholder: 'Age', type: 'number'},
+  {placeholder: 'Height', type: 'number'},
+  {placeholder: 'Weight', type: 'number'},
+]
 
 class UserInputs extends Component {
   state = {
     HR: 0,
-    BP: 0,
-    age: 0,
-    height: 0,
-    weight: 0,
+    Systolic: 0,
+    Diastolic: 0,
+    Age: 0,
+    Height: 0,
+    Weight: 0,
   };
 
   handleUserInput = (event) => {
@@ -22,7 +33,10 @@ class UserInputs extends Component {
       <form id={styles["user-inputs"]}>
         <article>
           <ul>
-            <li>
+            {inputs.map((input) => {
+              return <UserInput key={input.placeholder} type={input.type} />
+            })}
+            {/* <li>
               <label htmlFor={styles["heartRate-input"]}>Heart Rate: </label>
               <input type="number" placeholder="heart rate" onInput={this.handleUserInput} />
             </li>
@@ -33,13 +47,13 @@ class UserInputs extends Component {
             <li>
               <label htmlFor={styles["bp-diastolic-input"]}>BP - Diastolic: </label>
               <input type="number" placeholder="i.e. 80" />
-            </li>
+            </li> */}
           </ul>
         </article>
 
         <article>
           <ul>
-            <li>
+            {/* <li>
               <label htmlFor={styles["weight-input"]}>Weight: </label>
               <input type="number" placeholder="weight" />
             </li>
@@ -50,7 +64,7 @@ class UserInputs extends Component {
             <li>
               <label htmlFor={styles["age-input"]}>Age: </label>
               <input type="number" placeholder="age" />
-            </li>
+            </li> */}
           </ul>
         </article>
       </form>

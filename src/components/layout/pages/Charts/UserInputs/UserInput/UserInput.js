@@ -1,7 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const UserInput = (props) => (
-    <div>Individual UserInput</div>
-)
+  <li>
+    <label>{props.title}</label>
+    <input type="number" placeholder={props.placeholder} />
+  </li>
+);
 
 export default UserInput;
