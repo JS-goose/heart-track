@@ -3,7 +3,12 @@ import React from "react";
 const UserInput = (props) => (
   <li>
     <label>{props.placeholder}:</label>
-    <input type="number" placeholder={props.placeholder} />
+    <input
+      type={props.type}
+      placeholder={props.placeholder}
+      size={props.size}
+      maxLength={props.maxlength}
+    />
   </li>
 );
 
