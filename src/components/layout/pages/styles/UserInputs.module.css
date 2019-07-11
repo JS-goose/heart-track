@@ -31,3 +31,11 @@
 #user-inputs label {
     padding-right: 5px;
 }
+
+#user-inputs button {
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    justify-content: center;
+    align-content: center;
+}
