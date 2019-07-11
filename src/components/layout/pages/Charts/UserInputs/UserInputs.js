@@ -68,6 +68,7 @@ class UserInputs extends Component {
             })}
           </ul>
         </article>
+        <button type="submit">Submit</button>
       </form>
     );
   }
