@@ -7,7 +7,8 @@ const UserInput = (props) => (
       type={props.type}
       placeholder={props.placeholder}
       size={props.size}
-      maxLength={props.maxlength}
+      min={props.min}
+      max={props.max}
     />
   </li>
 );

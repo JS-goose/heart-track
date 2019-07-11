@@ -3,15 +3,15 @@ import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
 const inputsOne = [
-  { placeholder: "Heart Rate", type: "number", size: '3', maxlength: 3 },
-  { placeholder: "Systolic", type: "number", size: '3', maxlength: 3 },
-  { placeholder: "Diastolic", type: "number", size: '3', maxlength: 3 },
+  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: '1', max: '150' },
+  { placeholder: "Systolic (top)", type: "number", size: "3", min: '1', max: '200' },
+  { placeholder: "Diastolic (bottom)", type: "number", size: "3", min: '1', max: '200' },
 ];
 
 const inputsTwo = [
-  { placeholder: "Age", type: "number", size: '3', maxlength: 3 },
-  { placeholder: "Height", type: "number", size: '3', maxlength: 3 },
-  { placeholder: "Weight", type: "number", size: '3', maxlength: 3 },
+  { placeholder: "Age", type: "number", size: "3", min: '1', max: '120' },
+  { placeholder: "Height (inches)", type: "number", size: "3", min: '1', max: '96 '},
+  { placeholder: "Weight (pounds)", type: "number", size: "3", min: '1', max: '800' },
 ];
 
 class UserInputs extends Component {
@@ -43,7 +43,8 @@ class UserInputs extends Component {
                   type={input.type}
                   placeholder={input.placeholder}
                   size={input.size}
-                  maxlength={input.maxlength}
+                  min={input.min}
+                  max={input.max}
                 />
               );
             })}
@@ -60,6 +61,8 @@ class UserInputs extends Component {
                   placeholder={input.placeholder}
                   size={input.size}
                   maxlength={input.maxlength}
+                  min={input.min}
+                  max={input.max}
                 />
               );
             })}
