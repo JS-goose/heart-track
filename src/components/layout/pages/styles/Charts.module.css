@@ -13,33 +13,3 @@
     border-radius: 5px;
     box-shadow: 1px 1px 8px lightslategrey;
 }
-
-/* #user-inputs {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    background-color: var(--white);
-    border-radius: 20px;
-    box-shadow: 2px 2px 10px rgb(158, 158, 158);
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    padding: 30px 30px 30px 0;
-    grid-gap: 10px;
-    color: var(--red);
-}
-
-#user-inputs ul {
-    list-style: none;
-}
-
-#user-inputs li {
-    padding: 10px;
-    font-weight: 600;
-}
-
-#user-inputs input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    box-shadow: 1px 1px 3px rgb(182, 182, 182);
-} */
