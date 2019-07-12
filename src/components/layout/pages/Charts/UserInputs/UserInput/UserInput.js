@@ -9,6 +9,7 @@ const UserInput = (props) => (
       size={props.size}
       min={props.min}
       max={props.max}
+      onChange={props.handleUserInput}
     />
   </li>
 );

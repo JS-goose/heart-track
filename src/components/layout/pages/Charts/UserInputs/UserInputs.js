@@ -26,9 +26,9 @@ class UserInputs extends Component {
 
   handleUserInput = (event) => {
     console.log(event.target.valueAsNumber);
-    let updatedState = { ...this.state };
-    updatedState = { HR: event.target.valueAsNumber };
-    this.setState({ HR: updatedState["HR"] });
+    // let updatedState = { ...this.state };
+    // updatedState = { HR: event.target.valueAsNumber };
+    // this.setState({ HR: updatedState["HR"] });
   };
 
   render() {
@@ -45,6 +45,7 @@ class UserInputs extends Component {
                   size={input.size}
                   min={input.min}
                   max={input.max}
+                  handleUserInput={this.handleUserInput}
                 />
               );
             })}
@@ -63,6 +64,7 @@ class UserInputs extends Component {
                   maxlength={input.maxlength}
                   min={input.min}
                   max={input.max}
+                  handleUserInput={this.handleUserInput}
                 />
               );
             })}
