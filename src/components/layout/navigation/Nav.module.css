@@ -80,6 +80,6 @@
 #username-input {
   height: 30px;
   width: 150px;
-  border: 1px solid gray;
+  border: var(--btnBorder);
   border-radius: 5px;
 }
