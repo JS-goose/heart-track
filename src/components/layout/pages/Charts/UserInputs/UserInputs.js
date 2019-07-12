@@ -41,7 +41,7 @@ class UserInputs extends Component {
         ? console.table(event.target.id && input.id)
         : console.log("No match");
     });
-    this.setState(updatedState);
+    // this.setState(updatedState); 
   };
 
   render() {
