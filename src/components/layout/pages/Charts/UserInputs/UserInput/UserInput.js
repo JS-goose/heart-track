@@ -10,6 +10,7 @@ const UserInput = (props) => (
       min={props.min}
       max={props.max}
       onChange={props.handleUserInput}
+      id={props.id}
     />
   </li>
 );

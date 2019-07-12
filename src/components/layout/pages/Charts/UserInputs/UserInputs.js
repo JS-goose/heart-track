@@ -3,15 +3,22 @@ import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
 const inputsOne = [
-  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150", id: 'hr', },
-  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id:'sys' },
-  { placeholder: "Diastolic (bottom)", type: "number", size: "3", min: "1", max: "200", id:'dias' },
+  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150", id: "HR" },
+  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id: "sys" },
+  {
+    placeholder: "Diastolic (bottom)",
+    type: "number",
+    size: "3",
+    min: "1",
+    max: "200",
+    id: "dias",
+  },
 ];
 
 const inputsTwo = [
-  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id:'age',},
-  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id:'hgt', },
-  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id:'wgt' },
+  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id: "age" },
+  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id: "hgt" },
+  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id: "wgt" },
 ];
 
 class UserInputs extends Component {
@@ -25,16 +32,15 @@ class UserInputs extends Component {
   };
 
   handleUserInput = (event) => {
+    /*//* This needs work - need to compare input.id with state and if they match update state based on input value */
+    let updatedState = Object.keys({ ...this.state });
     console.log(event.target);
-    let updatedState = { ...this.state };
-    updatedState = {
-      HR: event.target.valueAsNumber,
-      Systolic: event.target.valueAsNumber,
-      Diastolic: event.target.valueAsNumber,
-      Age: event.target.valueAsNumber,
-      Height: event.target.valueAsNumber,
-      Weight: event.target.valueAsNumber,
-    };
+    console.log(updatedState);
+    updatedState.map((input) => {
+      return input.id === event.target.id
+        ? console.table(event.target.id && input.id)
+        : console.log("No match");
+    });
     this.setState(updatedState);
   };
 
@@ -52,6 +58,7 @@ class UserInputs extends Component {
                   size={input.size}
                   min={input.min}
                   max={input.max}
+                  id={input.id}
                   handleUserInput={this.handleUserInput}
                 />
               );
@@ -71,6 +78,7 @@ class UserInputs extends Component {
                   maxlength={input.maxlength}
                   min={input.min}
                   max={input.max}
+                  id={input.id}
                   handleUserInput={this.handleUserInput}
                 />
               );
