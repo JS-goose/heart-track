@@ -24,7 +24,7 @@
 #user-inputs input {
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid gray;
+    border: var(--btnBorder);
     box-shadow: 1px 1px 3px rgb(182, 182, 182);
 }
 
@@ -39,5 +39,5 @@
     grid-column-end: 3;
     margin-left: -21%;
     border-radius: 2px;
-    border: 1px solid gray;
+    border: var(--btnBorder);
 }
