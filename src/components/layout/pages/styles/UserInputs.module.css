@@ -36,6 +36,8 @@
     padding: 10px;
     width: 150px;
     cursor: pointer;
-    justify-content: center;
-    align-content: center;
+    grid-column-end: 3;
+    margin-left: -21%;
+    border-radius: 2px;
+    border: 1px solid gray;
 }
