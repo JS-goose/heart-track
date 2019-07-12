@@ -3,15 +3,15 @@ import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
 const inputsOne = [
-  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: '1', max: '150' },
-  { placeholder: "Systolic (top)", type: "number", size: "3", min: '1', max: '200' },
-  { placeholder: "Diastolic (bottom)", type: "number", size: "3", min: '1', max: '200' },
+  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150" },
+  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200" },
+  { placeholder: "Diastolic (bottom)", type: "number", size: "3", min: "1", max: "200" },
 ];
 
 const inputsTwo = [
-  { placeholder: "Age", type: "number", size: "3", min: '1', max: '120' },
-  { placeholder: "Height (inches)", type: "number", size: "3", min: '1', max: '96 '},
-  { placeholder: "Weight (pounds)", type: "number", size: "3", min: '1', max: '800' },
+  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120" },
+  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 " },
+  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800" },
 ];
 
 class UserInputs extends Component {
@@ -25,10 +25,17 @@ class UserInputs extends Component {
   };
 
   handleUserInput = (event) => {
-    console.log(event.target.valueAsNumber);
-    // let updatedState = { ...this.state };
-    // updatedState = { HR: event.target.valueAsNumber };
-    // this.setState({ HR: updatedState["HR"] });
+    console.log(event.target);
+    let updatedState = { ...this.state };
+    updatedState = {
+      HR: event.target.valueAsNumber,
+      Systolic: event.target.valueAsNumber,
+      Diastolic: event.target.valueAsNumber,
+      Age: event.target.valueAsNumber,
+      Height: event.target.valueAsNumber,
+      Weight: event.target.valueAsNumber,
+    };
+    this.setState(updatedState);
   };
 
   render() {
