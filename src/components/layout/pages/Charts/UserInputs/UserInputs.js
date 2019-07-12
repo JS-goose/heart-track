@@ -4,21 +4,21 @@ import UserInput from "./UserInput/UserInput";
 
 const inputsOne = [
   { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150", id: "HR" },
-  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id: "sys" },
+  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id: "Systolic" },
   {
     placeholder: "Diastolic (bottom)",
     type: "number",
     size: "3",
     min: "1",
     max: "200",
-    id: "dias",
+    id: "Diastolic",
   },
 ];
 
 const inputsTwo = [
-  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id: "age" },
-  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id: "hgt" },
-  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id: "wgt" },
+  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id: "Age" },
+  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id: "Height" },
+  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id: "Weight" },
 ];
 
 class UserInputs extends Component {
@@ -41,7 +41,7 @@ class UserInputs extends Component {
         ? console.table(event.target.id && input.id)
         : console.log("No match");
     });
-    // this.setState(updatedState); 
+    // this.setState(updatedState);
   };
 
   render() {
