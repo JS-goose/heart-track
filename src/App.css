@@ -3,6 +3,7 @@
   --white: rgb(235, 235, 235);
   --red: rgb(207, 49, 49);
   --green: rgb(143, 255, 143);
+  --btnBorder: 1px solid gray;
 }
 
 html,
