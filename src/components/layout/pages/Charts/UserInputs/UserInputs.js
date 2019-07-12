@@ -3,22 +3,22 @@ import styles from "../../styles/UserInputs.module.css";
 import UserInput from "./UserInput/UserInput";
 
 const inputsOne = [
-  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150", id: "HR" },
-  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id: "Systolic" },
+  { placeholder: "Heart Rate (BPM)", type: "number", size: "3", min: "1", max: "150", id: 0 },
+  { placeholder: "Systolic (top)", type: "number", size: "3", min: "1", max: "200", id: 1 },
   {
     placeholder: "Diastolic (bottom)",
     type: "number",
     size: "3",
     min: "1",
     max: "200",
-    id: "Diastolic",
+    id: 2,
   },
 ];
 
 const inputsTwo = [
-  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id: "Age" },
-  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id: "Height" },
-  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id: "Weight" },
+  { placeholder: "Age", type: "number", size: "3", min: "1", max: "120", id: 3 },
+  { placeholder: "Height (inches)", type: "number", size: "3", min: "1", max: "96 ", id: 4 },
+  { placeholder: "Weight (pounds)", type: "number", size: "3", min: "1", max: "800", id: 5 },
 ];
 
 class UserInputs extends Component {
@@ -34,12 +34,13 @@ class UserInputs extends Component {
   handleUserInput = (event) => {
     /*//* This needs work - need to compare input.id with state and if they match update state based on input value */
     let updatedState = Object.keys({ ...this.state });
-    console.log(event.target);
+    console.log(event.target.id);
     console.log(updatedState);
-    updatedState.map((input) => {
-      return input.id === event.target.id
-        ? console.table(event.target.id && input.id)
-        : console.log("No match");
+    updatedState.map((input,i) => {
+      console.log(input == i)
+      // return input[i] === event.target.id
+      //   ? console.table(event.target.id && input.id)
+      //   : console.log("No match");
     });
     // this.setState(updatedState);
   };
